@@ -21,7 +21,7 @@ public class GehaltsRechnerTest {
 		mohamed.setJahresgehalt(12000.0);
 		mohamed.setBonus(1000);
 		GehaltsRechner gehaltsRechner = new GehaltsRechner(mohamed);
-		assertEquals(2000.0, gehaltsRechner.getMonatsgehaltBrutto());
+		assertEquals(2000.0, gehaltsRechner.addBonus());
 		assertEquals(12000.0, gehaltsRechner.getJahresGehalt());
 	}
 	
@@ -31,7 +31,7 @@ public class GehaltsRechnerTest {
 		mohamed.setJahresgehalt(60000.0);
 		mohamed.setBonus(200);
 		GehaltsRechner gehaltsRechner = new GehaltsRechner(mohamed);
-		assertEquals(5200.0, gehaltsRechner.getMonatsgehaltBrutto());
+		assertEquals(5200.0, gehaltsRechner.addBonus());
 		assertEquals(60000.0, gehaltsRechner.getJahresGehalt());
 	}
 	@Test
@@ -40,7 +40,7 @@ public class GehaltsRechnerTest {
 		mohamed.setJahresgehalt(60000.0);
 		mohamed.setBonus(500);
 		GehaltsRechner gehaltsRechner = new GehaltsRechner(mohamed);
-		assertEquals(5500.0, gehaltsRechner.getMonatsgehaltBrutto());
+		assertEquals(5500.0, gehaltsRechner.addBonus());
 		assertEquals(60000.0, gehaltsRechner.getJahresGehalt());
 	}
 	
